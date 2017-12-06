@@ -21,10 +21,10 @@ import resolveAssetSource from 'react-native/Libraries/Image/resolveAssetSource'
 export default class WaveForm extends Component{
     static propTypes = {
         ...View.propTypes,
-        autoPlay:React.PropTypes.bool,
+        autoPlay:PropTypes.bool,
         waveFormStyle:PropTypes.shape({
-            waveColor: React.PropTypes.string,
-            scrubColor: React.PropTypes.string
+            waveColor: PropTypes.string,
+            scrubColor: PropTypes.string
          }),
         componentID:PropTypes.string,
         src: PropTypes.shape({
