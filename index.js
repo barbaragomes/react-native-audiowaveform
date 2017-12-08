@@ -12,7 +12,8 @@ import {
     processColor,
     StyleSheet,
     View,
-    requireNativeComponent
+    requireNativeComponent,
+    ViewPropTypes,
 } from 'react-native';
 import PropTypes from 'prop-types'
 import resolveAssetSource from 'react-native/Libraries/Image/resolveAssetSource';
@@ -20,7 +21,7 @@ import resolveAssetSource from 'react-native/Libraries/Image/resolveAssetSource'
 
 export default class WaveForm extends Component{
     static propTypes = {
-        ...View.propTypes,
+        ...ViewPropTypes,
         autoPlay:PropTypes.bool,
         waveFormStyle:PropTypes.shape({
             waveColor: PropTypes.string,
